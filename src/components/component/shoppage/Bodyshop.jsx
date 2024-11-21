@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import Navbarmenu from "./Navbarmenu";
 import Headershop from "./Headershop";
-import Navbarshop from "./navbarshop";
+import Navbarshop from "./Navbarshop" ;
 const Bodyshop = () => {
   return (
     <>
