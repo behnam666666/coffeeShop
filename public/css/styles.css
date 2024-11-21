@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'IRANSansWebMedium';
+  src: url('../fonts/IRANSansWeb-Medium.eot');
+  src: url('../fonts/IRANSansWeb-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/IRANSansWeb-Medium.woff2') format('woff2'),
+      url('../fonts/IRANSansWeb-Medium.woff') format('woff'),
+      url('../fonts/IRANSansWeb-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSansWeb';
+  src: url('../fonts/IRANSansWeb-Bold.eot');
+  src: url('../fonts/IRANSansWeb-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/IRANSansWeb-Bold.woff2') format('woff2'),
+      url('../fonts/IRANSansWeb-Bold.woff') format('woff'),
+      url('../fonts/IRANSansWeb-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:'IRANSansWeb';
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.body1{
+  min-width: 240px;
+  max-width: 440px;
+  width: 100%;
+  position: relative;
+}
+
+
+
+
+.swiper {
+  max-width: 440px;
+  height: 550px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+}
+
+.swiper-slide img {
+  display: block;
+  width:100%; 
+}
+
+.swiper-slide {
+  transform: translateY(250px) !important;
+  transition:  .5s ease!important; /* انیمیشن نرم */
+}
+
+/* تغییر translateY برای اسلایدهای Coverflow */
+.swiper-slide-active {
+  transform: translateY(-80px) !important; /* اضافه کردن translateY */
+}
+
+.swiper-slide-next, .swiper-slide-prev {
+  transform: translateY(120px) !important;  
+}
+/* .swiper-slide-prev.swiper-slide-prev {
+  transform: translateY(200px) rotate(-10deg)!important;
+}
+.swiper-slide-next.swiper-slide-next {
+  transform: translateY(200px) !important;
+} */
