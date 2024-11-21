@@ -19,7 +19,7 @@ const Bodyshop = () => {
         sx={{
           width: "440px",
           height: "20%",
-          bgcolor: "rgba(75, 143, 90, 1)",
+          bgcolor: "rgba(75, 143, 91, 1)",
           position: "fixed",
           bottom: "0",
           zIndex: "-4",
