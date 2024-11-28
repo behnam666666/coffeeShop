@@ -24,7 +24,9 @@ function App() {
           position:"absolute",
           top:"0",
           overflow:"hidden",
-          zIndex:"1"
+          zIndex:"1",
+          display:"flex",
+          justifyContent:"center"
           
         }}
       >

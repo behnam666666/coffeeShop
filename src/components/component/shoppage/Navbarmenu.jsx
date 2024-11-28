@@ -1,50 +1,37 @@
-import { Box, Typography } from "@mui/material";
+import cakeIcon from "../../../assets/cake.svg";
+import drinkIcon from "../../../assets/drink.svg";
+import coffeeIcon from "../../../assets/coffee.svg";
+import teaIcon from "../../../assets/tea.svg";
 
+import { Box , Typography } from "@mui/material";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import cakeicon from "../../../assets/cake.svg";
-import tesicon from "../../../assets/tea.svg";
-import drink from "../../../assets/drink.svg"
-import coffee from "../../../assets/coffee.svg"
+const Navbarmenu = () => {
+  return (
+    <>
+    <Box sx={{width:"100%" , marginTop:"22px" ,}}>
+        <Swiper slidesPerView={4} spaceBetween={10}  loop={true} style={{overflow:"visible !important"}}>
+            <SwiperSlide style={{height:"100px"}}><Box sx={{width:"74px" , height:"74px" , backgroundColor:"rgba(169, 213, 179, 1)", borderRadius:"50%" , display:"flex" , justifyContent:"center" , alignItems:"center" , position:"relative"}}> <Box component="img" src={cakeIcon} /> <Typography sx={{fontSize:"12px", fontWeight:"700" , color:"black" , position:"absolute" , bottom:"-22px"}}>کیک و شیرینی</Typography> </Box></SwiperSlide>
+            
+            <SwiperSlide style={{height:"100px"}}><Box sx={{width:"74px" , height:"74px" , backgroundColor:"rgba(75, 143, 90, 1)", borderRadius:"50%" , display:"flex" , justifyContent:"center" , alignItems:"center", position:"relative"}}> <Box component="img" src={teaIcon} /><Typography sx={{fontSize:"12px", fontWeight:"700" , color:"black" , position:"absolute" , bottom:"-22px"}}>چای</Typography></Box></SwiperSlide>
 
+            <SwiperSlide style={{height:"100px"}}><Box sx={{width:"74px" , height:"74px" , backgroundColor:"rgba(169, 213, 179, 1)", borderRadius:"50%" , display:"flex" , justifyContent:"center" , alignItems:"center", position:"relative"}}> <Box component="img" src={drinkIcon} /><Typography sx={{fontSize:"12px", fontWeight:"700" , color:"black" , position:"absolute" , bottom:"-22px"}}>نوشیدنی سرد</Typography></Box></SwiperSlide>
 
-const Navbarmenu =()=>{
-    return(
-        <>
-        <Box
-          component="div"
-          sx={{
-            width: "730px",
-            height: "730px",
-            bgcolor: "rgba(69, 131, 83, 1)",
-            position: "absolute",
-            bottom: "-169px",
-            borderRadius: "100%",
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
+            <SwiperSlide style={{height:"100px"}}><Box sx={{width:"74px" , height:"74px" , backgroundColor:"rgba(169, 213, 179, 1)", borderRadius:"50%" , display:"flex" , justifyContent:"center" , alignItems:"center", position:"relative"}}> <Box component="img" src={coffeeIcon} /><Typography sx={{fontSize:"12px", fontWeight:"700" , color:"black" , position:"absolute" , bottom:"-22px"}}>نوشیدنی گرم</Typography></Box></SwiperSlide>      
+        
+            <SwiperSlide style={{height:"100px"}}><Box sx={{width:"74px" , height:"74px" , backgroundColor:"rgba(169, 213, 179, 1)", borderRadius:"50%" , display:"flex" , justifyContent:"center" , alignItems:"center" , position:"relative"}}> <Box component="img" src={cakeIcon} /> <Typography sx={{fontSize:"12px", fontWeight:"700" , color:"black" , position:"absolute" , bottom:"-22px"}}>کیک و شیرینی</Typography> </Box></SwiperSlide>
+            
+            <SwiperSlide style={{height:"100px"}}><Box sx={{width:"74px" , height:"74px" , backgroundColor:"rgba(75, 143, 90, 1)", borderRadius:"50%" , display:"flex" , justifyContent:"center" , alignItems:"center", position:"relative"}}> <Box component="img" src={teaIcon} /><Typography sx={{fontSize:"12px", fontWeight:"700" , color:"black" , position:"absolute" , bottom:"-22px"}}>چای</Typography></Box></SwiperSlide>
 
-            <Box component="div" sx={{position:"relative" , width:"74px" , height:"74px", bgcolor:"white", borderRadius:"100%", transform:"translate(-40px , 49px)" , display:"flex" , justifyContent:"center" , alignItems:"center"}}>
-                <Box component="img" src={cakeicon} sx={{width:"38px", height:"49px"}} />
-                <Typography sx={{position:"absolute" , bottom:"-20px" , fontSize:"12px", color:"white"}}>کیک و شیرینی</Typography>
-            </Box>
-            <Box component="div" sx={{width:"74px" , height:"74px", bgcolor:"white", borderRadius:"100%" ,transform:"translate(-17px , 17px)" , display:"flex" , justifyContent:"center" , alignItems:"center"}}>
-                <Box component="img" src={tesicon} sx={{width:"57px", height:"57px"}} />
-                <Typography sx={{position:"absolute" , bottom:"-20px" , fontSize:"12px", color:"white"}}>چای</Typography>
+            <SwiperSlide style={{height:"100px"}}><Box sx={{width:"74px" , height:"74px" , backgroundColor:"rgba(169, 213, 179, 1)", borderRadius:"50%" , display:"flex" , justifyContent:"center" , alignItems:"center", position:"relative"}}> <Box component="img" src={drinkIcon} /><Typography sx={{fontSize:"12px", fontWeight:"700" , color:"black" , position:"absolute" , bottom:"-22px"}}>نوشیدنی سرد</Typography></Box></SwiperSlide>
 
-            </Box>
-            <Box component="div" sx={{width:"74px" , height:"74px", bgcolor:"white", borderRadius:"100%",transform:"translate(17px , 17px)" , display:"flex" , justifyContent:"center" , alignItems:"center"}}>
-            <Box component="img" src={drink} sx={{width:"32px", height:"45px"}} />
-            <Typography sx={{position:"absolute" , bottom:"-20px" , fontSize:"12px", color:"white"}}>نوشیدنی ها</Typography>
+            <SwiperSlide style={{height:"100px"}}><Box sx={{width:"74px" , height:"74px" , backgroundColor:"rgba(169, 213, 179, 1)", borderRadius:"50%" , display:"flex" , justifyContent:"center" , alignItems:"center", position:"relative"}}> <Box component="img" src={coffeeIcon} /><Typography sx={{fontSize:"12px", fontWeight:"700" , color:"black" , position:"absolute" , bottom:"-22px"}}>نوشیدنی گرم</Typography></Box></SwiperSlide>      
+        </Swiper>
 
-                </Box>
-            <Box component="div" sx={{width:"74px" , height:"74px", bgcolor:"white", borderRadius:"100%",transform:"translate(40px , 49px)" , display:"flex" , justifyContent:"center" , alignItems:"center"}}>
-                <Box component="img" src={coffee} sx={{width:"38px", height:"49px"}} />
-                <Typography sx={{position:"absolute" , bottom:"-20px" , fontSize:"12px", color:"white"}}>بر پایه قهوه</Typography>
+    </Box>
+      
+    </>
+  );
+};
 
-            </Box>
-        </Box>
-        </>
-    )
-}
 export default Navbarmenu;

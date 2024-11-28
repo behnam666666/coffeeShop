@@ -42,41 +42,23 @@ body {
 
 
 
-.swiper {
-  max-width: 440px;
-  height: 550px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+
+
+
+.Search{
+  width: calc(100% - 58px);
+  height: 45px;
+  border-radius: 30px;
+  border: 2px solid rgba(214, 214, 214, 1);
+  background-color: rgba(245, 245, 245, 1);
+  color: rgba(183, 183, 183, 1);
+  font-size: 16px;
+  font-weight: 700;
+  outline: none;
+  padding-right: 52px;
+
 }
 
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 400px;
-}
-
-.swiper-slide img {
-  display: block;
-  width:100%; 
-}
-
-.swiper-slide {
-  transform: translateY(250px) !important;
-  transition:  .5s ease!important; /* انیمیشن نرم */
-}
-
-/* تغییر translateY برای اسلایدهای Coverflow */
-.swiper-slide-active {
-  transform: translateY(-80px) !important; /* اضافه کردن translateY */
-}
-
-.swiper-slide-next, .swiper-slide-prev {
-  transform: translateY(120px) !important;  
-}
-/* .swiper-slide-prev.swiper-slide-prev {
-  transform: translateY(200px) rotate(-10deg)!important;
-}
-.swiper-slide-next.swiper-slide-next {
-  transform: translateY(200px) !important;
+/* .Search::placeholder{
+  padding-right: 30px;
 } */

@@ -7,15 +7,8 @@ const Headershop =()=>{
         <Box
           component="img"
           src={instagramTcon}
-          sx={{ position: "absolute", top: "25px", right: "16px" }}
+          sx={{ position: "absolute", top: "26px", right: "0px" }}
         />
-        <Box sx={{ width: "85%", marginTop: "75px" }}>
-          <Typography
-            sx={{ fontSize: "32px", fontWeight: "700", lineHeight: "38px" }}
-          >
-            در هر زمان از قهوه خود لذت ببرید.
-          </Typography>
-        </Box>
         </>
     )
 }

@@ -1,7 +1,9 @@
 import { Box } from "@mui/material";
-import Navbarmenu from "./Navbarmenu";
+
 import Headershop from "./Headershop";
-import Navbarshop from "./Navbarshop" ;
+import Search from "./Search";
+import Navbarmenu from "./Navbarmenu";
+import ItemsShop from "./ItemsShop";
 const Bodyshop = () => {
   return (
     <>
@@ -9,22 +11,19 @@ const Bodyshop = () => {
     
       <Box
         sx={{
-          width: "100%",
-          height: "850px",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
+          width: "90%",
+          height: "100vh",
+          overflow:"scroll",
+          
           position: "relative",
         }}
       >
         <Headershop />
-
+        <Search />
         <Navbarmenu />
+        <ItemsShop />
+      </Box>
 
-        <Navbarshop />
-      </Box>
-      <Box sx={{width:"440px", height:"20%" , bgcolor:"rgba(75, 143, 90, 1)", position:"fixed" , bottom:"0" , zIndex:"-4"}}>
-      </Box>
     </>
   );
 };
